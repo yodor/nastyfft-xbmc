@@ -18,6 +18,8 @@
 using namespace std;
 
 
+
+
 NastyFFT::NastyFFT() : obj(0), preset_index(0)
 {
 	printf("NastyFFT: CTOR ... \n");

@@ -3,9 +3,15 @@
 
 #include "scenepreset.h"
 
-
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#endif
+#ifdef __linux__
 #include <GL/gl.h>
 #include <GL/glu.h>
+#endif
+
 class NastyFFT  
 {
 

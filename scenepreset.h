@@ -20,7 +20,12 @@
 #ifndef SCENEPRESET
 #define SCENEPRESET
 
+#ifdef __APPLE__
+#include <OpenGL/gl.h>
+#endif
+#ifdef __linux__
 #include <GL/gl.h>
+#endif
 
 #include <iostream>
 #include <string>
